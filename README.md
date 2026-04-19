@@ -156,6 +156,10 @@ JSON report includes:
 - Risk level is heuristic. Always validate with your real context.
 - Baseline files are text and versionable in Git for infrastructure traceability.
 
+## License
+
+MIT. See [LICENSE](LICENSE).
+
 ## Author
 
 Riantsoa RAJHONSON
