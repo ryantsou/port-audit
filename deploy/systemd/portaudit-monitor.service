@@ -1,0 +1,11 @@
+[Unit]
+Description=PortAudit daily monitoring job
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/port-audit
+ExecStart=/opt/port-audit/scripts/monitor-portaudit.sh --baseline /var/lib/portaudit/baseline.txt --report-dir /var/log/portaudit --top 25
+User=root
+Group=root

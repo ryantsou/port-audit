@@ -1,0 +1,11 @@
+[Unit]
+Description=Run PortAudit monitoring every day
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=15m
+Unit=portaudit-monitor.service
+
+[Install]
+WantedBy=timers.target
